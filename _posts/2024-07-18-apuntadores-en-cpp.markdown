@@ -17,14 +17,14 @@ Esta dirección de memoria se asigna a un apuntador y se puede compartir entre f
 ```cpp
 #include <stdio.h>
 
-void increment(int *v) {
+void incrementar(int *v) {
     (*v)++;
 }
 
 int main() {
     int a;
     scanf("%d", &a);
-    increment(&a);
+    incrementar(&a);
     printf("%d\n", a);
     return 0;
 }
