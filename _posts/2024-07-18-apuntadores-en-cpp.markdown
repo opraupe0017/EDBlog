@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Apuntadores en C++"
-date:   2024-07-18 22:49:00 -0500
+date:   2124-07-18 22:49:00 -0500
 categories: cpp
 author: Oscar García
 ---
