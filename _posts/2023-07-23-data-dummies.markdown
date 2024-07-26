@@ -302,8 +302,7 @@ int main() {
     p1.setEdad(30);
     node1.setData(p1);
 
-    // Imprimir los datos del nodo nuevamente usando el operador 
-       sobrecargado <<
+    // Imprimir los datos del nodo nuevamente usando el operador sobrecargado <<
     std::cout << "Nodo 1 data despues de cambios: " << node1.getData() <<    
                  std::endl;
 
