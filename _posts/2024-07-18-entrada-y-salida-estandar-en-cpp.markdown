@@ -1,9 +1,9 @@
 ---
-layout: post
 title:  "Entrada y salida estándar en C++"
 date:   2024-07-18 21:43:00 -0500
-categories: cpp
-author: Oscar García
+categories: [Biblioteca estándar, entrada estándar, salida estándar, C++]
+tags: [iostream, std, cin, cout, c++] 
+author: ok
 ---
 
 Practiquemos la lectura de entradas desde stdin y la impresión de salidas en stdout. Para ello debemos importar la biblioteca `iostream` usando esta sintaxis:

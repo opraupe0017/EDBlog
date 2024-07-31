@@ -1,9 +1,9 @@
 ---
-layout: post
 title:  "Apuntadores en C++"
 date:   2124-07-18 22:49:00 -0500
-categories: cpp
-author: Oscar García
+categories: [C++, apuntadores]
+tags: [c++, pointer] 
+author: ok
 ---
 
 Un apuntador en C++ se usa para compartir una dirección de memoria entre diferentes contextos (principalmente funciones). Se utilizan cuando una función necesita modificar el contenido de una variable, pero no tiene propiedad de la misma.

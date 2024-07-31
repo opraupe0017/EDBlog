@@ -1,18 +1,12 @@
 ---
-layout: post
 title:  "Apuntadores"
 date:   2024-07-23 6:00:00 -0500
-categories: cpp
-author: Oscar García
+categories: [Apuntador, C++, Parámetro por valor, Parámerto por referencia]
+tags: [apuntador, parametro-valor, parametro-referencia, c++] 
+author: ok
 ---
 
 El contenido de este artículo le pertenece al los Profesores **Édison Valencia** y **Mauricio Árias**, quienes me han permitido compartirlo por este medio.
-
-## Contenidos
-{:.no_toc}
-
-* TOC
-{:toc}
 
 ---
 

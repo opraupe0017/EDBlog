@@ -1,16 +1,10 @@
 ---
-layout: post
 title:  "Hello, World! en C++"
 date:   2024-07-16 12:00:00 -0500
-categories: cpp
-author: Oscar García
+categories: [C++, Hola mundo, std]
+tags: [c++, hola-mundo] 
+author: ok
 ---
-
-## Contenidos
-{:.no_toc}
-
-* TOC
-{:toc}
 
 En esta publicación, aprenderemos a crear un programa en **C++** que imprima en consola el mensaje **"Hello, World!"**. Este es el clásico primer programa que se escribe al aprender un nuevo lenguaje de programación. ¡Vamos a empezar!
 

@@ -1,20 +1,14 @@
 ---
-layout: post
 title:  "Representación de datos, comprensión de estructuras y Nodo en C++"
 date:   2024-07-23 7:00:00 -0500
-categories: cpp
-author: Oscar García
+categories: [C++, Archivos de encabezado, Data dummy, Data dummy manual, Programación orientada a objetos, Nodo]
+tags: [c++, header, h-file, data-dummy, poo, node] 
+author: ok
 ---
 
 El contenido de este artículo le contiene aportes de los Profesores **Édison Valencia** y **Mauricio Árias**, quienes me han permitido compartirlo por este medio.
 
-En este artículo conoceremos un poco sobre **programación orientada a objetos** (**POO**) y cómo generar data dummie en `C++` y almacenar la información en nodos.
-
-## Contenidos
-{:.no_toc}
-
-* TOC
-{:toc}
+En este artículo conoceremos un poco sobre **programación orientada a objetos** (**POO**) y cómo generar data dummy en `C++` y almacenar la información en nodos.
 
 ---
 
