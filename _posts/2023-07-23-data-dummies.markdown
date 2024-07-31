@@ -226,7 +226,8 @@ Un **nodo** es un objeto que sirve como un contenedor para un dato y que al cont
 
 El objeto que ilustramos [arriba](#ejemplo-1-data-dummy-de-una-persona-hecha-a-mano), que para el ejemplo se llama Persona, lo adjuntamos en una clase Node, que nos permitirá separar la información de la estructura.
 
-<img src="/EDBlog/assets/0004_nodo_persona.png" alt="img: nodo persona">
+![nodo persona](/assets/img/0004_nodo_persona.png)
+_Nodo persona_
 
 #### Script de `node.h`:
 
