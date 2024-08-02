@@ -10,7 +10,7 @@ En este artículo exploraremos la del tipo estática con la primera estructura d
 
 ## Definición Arreglo unidimensional estático
 
-> **Definición:** Un *arreglo unidimensional estático de tamaño $n$* es una estructura de datos estática lineal que:
+> **Definición:** Un **arreglo unidimensional estático de tamaño $n$** es una estructura de datos estática lineal que:
 > 
 > - Se debe definir previamente la longitud $n$.
 > - Almacena una colección de $n$ elementos del *mismo tipo*.
@@ -174,33 +174,6 @@ Consideremos el siguiente archivo `main.cpp` el cual tiene como dependencias los
   - `edad`: Número entre $0$ y $100$,
   - `id`: Número entero entre $1000000000$ y $1999999999$,
   - `genero`: Booleano `true` y `false` para mujer y hombre respectivamente,
-  - Sobrecargado los operadores `<`, `>` y `==` para poder comparar personas por edad,
-    el cual se agrega en los scripts
-    ```cpp 
-    // Sobrecarga de los operadores >, < y == con respecto a la edad
-    bool operator>(const Persona &other) const;
-    bool operator<(const Persona &other) const;
-    bool operator==(const Persona &other) const;
-    ```
-    {: file="agregar en persona.h" }
-    
-    ```cpp 
-    // Sobrecarga del operador >
-    bool Persona::operator>(const Persona &other) const {
-        return this->edad > other.edad;
-    }
-
-    // Sobrecarga del operador <
-    bool Persona::operator<(const Persona &other) const {
-        return this->edad < other.edad;
-    }
-
-    // Sobrecarga del operador ==
-    bool Persona::operator==(const Persona &other) const {
-        return this->edad == other.edad;
-    }
-    ```
-    {: file="agregar en persona.cpp" }
 - `node.h` y `node.cpp`: Clase `Nodo`,
 - `archivo.h` y `archivo.cpp`: Clase `Archivo.`
 - `array.h` y `array.cpp`: Clase `Array`.
@@ -311,8 +284,10 @@ int main() {
 
 ## Actividad
 
-> **Actividad:** Completar la clase `Persona` con la información de `id` y `género` para que el archivo `main.cpp` pueda compilarse.
-{: .prompt-danger }
+> 1. Completar la clase `Persona` con la información de `id` y `género` para que el archivo `main.cpp` pueda compilarse.
+> 2. Implementar método `update(Persona &data, int index)` en `Array`, el cual permita ingresar la información de una persona en una posición, sobreescribiendo lo que esté en dicha posición.
+> 3. Implementar método `searchById(int id)` en `Array`, el cuál entregue la posición del arreglo cuya persona coincida con el valor del `id`.
+{: .prompt-warning }
 
 ---
 
@@ -326,7 +301,7 @@ g++ -c array.cpp
 g++ -o main main.cpp persona.o node.o archivo.o array.o
 ./main
 ```
-{: file="main.cpp" }
+{: file="Terminal" }
 
 ---
 

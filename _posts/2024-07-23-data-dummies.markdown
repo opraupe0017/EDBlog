@@ -127,10 +127,16 @@ public:
 
     // Sobrecarga del operador << para imprimir el objeto Persona
     friend std::ostream& operator<<(std::ostream &out, const Persona &persona);
+
+    // Sobrecarga de los operadores >, < y == con respecto a la edad
+    bool operator>(const Persona &other) const;
+    bool operator<(const Persona &other) const;
+    bool operator==(const Persona &other) const;
 };
 
 #endif // PERSONA_H
 ```
+{: file="persona.h" }
 
 **`persona.h`:**
 
@@ -168,7 +174,23 @@ std::ostream& operator<<(std::ostream &out, const Persona &persona) {
     out << "Nombre: " << persona.nombre << ", Edad: " << persona.edad;
     return out;
 }
+
+// Sobrecarga del operador >
+bool Persona::operator>(const Persona &other) const {
+    return this->edad > other.edad;
+}
+
+// Sobrecarga del operador <
+bool Persona::operator<(const Persona &other) const {
+    return this->edad < other.edad;
+}
+
+// Sobrecarga del operador ==
+bool Persona::operator==(const Persona &other) const {
+    return this->edad == other.edad;
+}
 ```
+{: file="persona.cpp" }
 
 **`persona.cpp`:**
 
@@ -199,6 +221,7 @@ int main() {
     return 0;  // Indica que el programa terminó correctamente
 }
 ```
+{: file="main.cpp" }
 
 **`main.cpp`:**
 
@@ -215,6 +238,7 @@ g++ -o programa main.cpp persona.o
 y para ejecutar
 ./programa.exe
 ```
+{: file="compilación y ejecución de main.cpp" }
 
 ---
 
@@ -242,6 +266,9 @@ private:
     Persona data; // Objeto Persona almacenado en el nodo
     
 public:
+    // Constructor por defecto
+    Node();
+
     // Constructor que inicializa el nodo con un objeto Persona
     Node(const Persona &data);
 
@@ -255,11 +282,15 @@ public:
 
 #endif // NODE_H
 ```
+{: file="node.h" }
 
 #### Script de `node.cpp`:
 
 ```cpp
 #include "node.h"
+
+// Constructor por defecto de Node, sin nombre ni edad válida
+Node::Node() : data(Persona("", -1)) {}
 
 // Constructor de Node que inicializa el nodo con un objeto Persona
 Node::Node(const Persona &data) : data(data) {}
@@ -274,6 +305,7 @@ void Node::setData(const Persona &data) {
     this->data = data;
 }
 ```
+{: file="node.cpp" }
 
 #### Script de `main.cpp` ahora usando el objeto Nodo
 
@@ -304,6 +336,7 @@ int main() {
     return 0;  // Indica que el programa terminó correctamente
 }
 ```
+{: file="main.cpp" }
 
 #### Proceso de compilación y ejecución
 
@@ -316,6 +349,7 @@ g++ -o demostracion main.cpp persona.o node.o
 Ejecutar
 .\demostracion
 ```
+{: file="compilación y ejecución de main.cpp" }
 
 ---
 
